@@ -71,7 +71,6 @@ export const getPodcastStatus = async (token: string, documentId: string): Promi
   return response.data;
 };
 
-// --- NEW FUNCTION ---
 export const getDocumentStatus = async (token: string, documentId: string): Promise<{ status: string }> => {
   const response = await apiClient.get(`/documents/${documentId}/status`, {
     headers: { Authorization: `Bearer ${token}` },

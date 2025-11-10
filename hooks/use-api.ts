@@ -1,4 +1,3 @@
-// client/hooks/use-api.ts
 'use client';
 
 import { useAuth } from '@clerk/nextjs';
